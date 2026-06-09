@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------
+   MoreToLive — visual identity
+   Paleta da marca (5 cores) + tipografia Satoshi.
+---------------------------------------------------------------- */
+@theme {
+  /* --- paleta da marca --- */
+  --color-coral: #ff7a59;        /* Coral Sunset (primária) — botões, destaques, ativos, logo */
+  --color-creme: #f7f3ec;        /* Creme — fundo do app */
+  --color-preto: #1a1a1a;        /* Preto Suave — texto e fundos escuros */
+  --color-oliva: #6f7d6c;        /* Verde Oliva — texto secundário, elementos discretos */
+  --color-neon: #c6ff00;         /* Verde Neon — só pequenos acentos (ex: "últimas vagas").
+                                    nunca como fundo atrás de texto nem como texto em fundo claro */
+
+  /* --- apelidos: o código antigo usava estes nomes; já apontam pra nova paleta,
+         então tudo re-skina de uma vez. --- */
+  --color-verde: #ff7a59;        /* era verde escuro -> agora coral (primária) */
+  --color-menta: #1a1a1a;        /* era menta -> agora preto (texto sobre coral, legível) */
+  --color-carvao: #1a1a1a;       /* texto principal -> preto */
+  --color-cinza: #6f7d6c;        /* texto secundário -> oliva */
+  --color-ambar: #ff7a59;        /* acento antigo -> coral */
+  --color-lilas: #6f7d6c;        /* acento antigo -> oliva */
+
+  /* fonte da marca: Satoshi (Inter como reserva) */
+  --font-sans: "Satoshi", "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* wordmark serifado "more to live" */
+  --font-serif: "Playfair Display", Georgia, serif;
+
+  /* generous rounding for cards */
+  --radius-card: 1.5rem;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-creme);
+  color: var(--color-carvao);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* esconde a barrinha de rolagem na fileira de chips (visual mais limpo) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
