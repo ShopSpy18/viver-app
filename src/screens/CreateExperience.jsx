@@ -61,7 +61,7 @@ export default function CreateExperience({ host, onClose, onPublish }) {
 
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-full max-w-sm min-h-screen bg-white flex flex-col">
+      <div className="w-full max-w-sm lg:max-w-2xl min-h-screen bg-white flex flex-col">
         {/* ---- topo ---- */}
         <div className="flex items-center justify-between px-4 py-3 border-b border-black/5">
           <button

@@ -15,7 +15,7 @@ export default function Salvos({
 
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-full max-w-sm min-h-screen bg-creme pb-24">
+      <div className="w-full max-w-sm lg:max-w-4xl min-h-screen bg-creme pb-24">
         {/* cabeçalho */}
         <header className="px-5 pt-8 pb-3">
           <h1 className="text-carvao font-extrabold text-2xl leading-tight">
@@ -27,7 +27,7 @@ export default function Salvos({
         </header>
 
         {/* lista */}
-        <main className="px-5 py-3 flex flex-col gap-5">
+        <main className="px-5 py-3 grid grid-cols-1 lg:grid-cols-2 gap-5">
           {savedExperiences.map((exp) => (
             <ExperienceCard
               key={exp.id}
@@ -39,7 +39,7 @@ export default function Salvos({
           ))}
 
           {!hasSaved && (
-            <div className="text-center py-16">
+            <div className="lg:col-span-2 text-center py-16">
               <p className="text-cinza leading-relaxed">
                 nada salvo ainda. 🤍
                 <br />

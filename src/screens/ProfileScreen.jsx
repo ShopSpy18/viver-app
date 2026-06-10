@@ -59,7 +59,7 @@ export default function ProfileScreen({
 
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-full max-w-sm min-h-screen bg-creme pb-24">
+      <div className="w-full max-w-sm lg:max-w-2xl min-h-screen bg-creme pb-24">
         {/* ---- topo ---- */}
         <div className="flex justify-between items-center px-5 pt-8 pb-2">
           <span className="text-carvao font-extrabold text-lg">meu perfil</span>

@@ -43,7 +43,7 @@ export default function ExperienceDetail({
 
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-full max-w-sm min-h-screen bg-creme pb-28 relative">
+      <div className="w-full max-w-sm lg:max-w-2xl min-h-screen bg-creme pb-28 relative">
         {/* ---- foto grande no topo ---- */}
         <div className="relative">
           {photo && !photoFailed ? (
@@ -197,7 +197,7 @@ export default function ExperienceDetail({
         </div>
 
         {/* ---- botão fixo de reservar ---- */}
-        <div className="fixed bottom-0 inset-x-0 mx-auto max-w-sm bg-creme/95 backdrop-blur border-t border-black/5 px-5 py-4 flex items-center gap-4">
+        <div className="fixed bottom-0 inset-x-0 mx-auto max-w-sm lg:max-w-2xl bg-creme/95 backdrop-blur border-t border-black/5 px-5 py-4 flex items-center gap-4">
           <div className="leading-tight">
             <p className="text-carvao font-extrabold text-lg">
               {formatPrice(price)}

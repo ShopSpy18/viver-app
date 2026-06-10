@@ -13,7 +13,7 @@ const items = [
 
 export default function BottomNav({ active = "explorar", onNavigate }) {
   return (
-    <nav className="fixed bottom-0 inset-x-0 mx-auto max-w-sm bg-white border-t border-black/5">
+    <nav className="fixed bottom-0 inset-x-0 mx-auto max-w-sm bg-white border-t border-black/5 lg:bottom-5 lg:max-w-md lg:rounded-2xl lg:border lg:overflow-hidden">
       <ul className="flex">
         {items.map((item) => {
           const isActive = item.id === active

@@ -12,7 +12,7 @@ export default function ConfirmationScreen({ experience, onExplore }) {
 
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-full max-w-sm min-h-screen bg-preto flex flex-col px-6 py-12 text-creme">
+      <div className="w-full max-w-sm lg:max-w-md min-h-screen bg-preto flex flex-col px-6 py-12 text-creme">
         {/* selo de sucesso */}
         <div className="mt-8 flex flex-col items-center text-center">
           <div className="w-20 h-20 rounded-full bg-coral text-preto text-4xl flex items-center justify-center">

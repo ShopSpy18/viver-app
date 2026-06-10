@@ -57,7 +57,7 @@ export default function ExploreScreen({
 
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-full max-w-sm min-h-screen bg-creme pb-24">
+      <div className="w-full max-w-sm lg:max-w-4xl min-h-screen bg-creme pb-24">
         {/* logo + saudação + cabeçalho */}
         <header className="px-5 pt-8 pb-3">
           <div className="flex items-start justify-between">
@@ -83,7 +83,7 @@ export default function ExploreScreen({
 
         {/* busca com ícone e atalho de filtros */}
         <div className="px-5">
-          <div className="relative">
+          <div className="relative lg:max-w-xl">
             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-cinza">
               <IconSearch className="w-5 h-5" />
             </span>
@@ -150,8 +150,8 @@ export default function ExploreScreen({
           </button>
         </div>
 
-        {/* lista */}
-        <main className="px-5 py-3 flex flex-col gap-5">
+        {/* lista — uma coluna no celular, grade no desktop */}
+        <main className="px-5 py-3 grid grid-cols-1 lg:grid-cols-2 gap-5">
           {visibleExperiences.map((exp) => (
             <ExperienceCard
               key={exp.id}
@@ -163,7 +163,7 @@ export default function ExploreScreen({
           ))}
 
           {visibleExperiences.length === 0 && (
-            <p className="text-center text-cinza py-16 leading-relaxed">
+            <p className="lg:col-span-2 text-center text-cinza py-16 leading-relaxed">
               ainda não tem nada por aqui. 🌱
               <br />
               bora ser o primeiro a criar uma experiência?

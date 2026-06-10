@@ -23,7 +23,7 @@ export default function HostProfile({
 
   return (
     <div className="min-h-screen w-full flex justify-center">
-      <div className="w-full max-w-sm min-h-screen bg-creme pb-12">
+      <div className="w-full max-w-sm lg:max-w-2xl min-h-screen bg-creme pb-12">
         {/* ---- capa ---- */}
         <div className="relative h-20 bg-coral">
           <button
