@@ -8,3 +8,10 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+// registra o service worker (necessário pra instalar o app / PWA)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch(() => {})
+  })
+}
